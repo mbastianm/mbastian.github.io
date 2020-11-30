@@ -8,7 +8,9 @@ body{
 	align-items: center;
 }
 
-#header-box{
+/* ------------------------------------------------------HEADER STYLE--------------------------------------------------------------*/
+
+.header-box{
 	width: 100%;
 	background-color: #FFFAF0;
 	box-shadow: 0px 11px 21px -9px rgba(0,0,0,0.75);
@@ -24,12 +26,12 @@ h1{
 	color: #2F4F4F;
 }
 
-#header-box nav ul{
+.header-box nav ul{
 	text-align: center;
 	margin:0;
 }
 
-#header-box nav ul li{
+.header-box nav ul li{
 	padding: 20px 20px 20px 20px;
 	display: inline-block;
 	font-family: 'Quicksand', sans-serif;
@@ -37,7 +39,7 @@ h1{
 	font-size: 20px;
 }
 
-#header-box nav ul li a{
+.header-box nav ul li a{
 	padding: 20px 50px 20px 50px;
 	text-decoration: none;
 	list-style-type: none;
@@ -45,13 +47,17 @@ h1{
 	transition: all 0.5s;
 }
 
-#header-box nav ul li a:hover{
+.header-box nav ul li a:hover{
 	background-color: #40E0D0;
 	color:#FFFAF0;
 	transition: all 0.5s;
 }
 
-#body-box{
+/* ------------------------------------------------------END OF header STYLE----------------------------------------------------------------------*/
+
+/* ------------------------------------------------------index.html STYLE-------------------------------------------------------------------------*/
+
+.body-box{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -59,7 +65,7 @@ h1{
 		
 }
 
-#profile-box{
+.profile-box{
 	max-width:900px;
 	width: 80%; 
 	height: 600px;
@@ -67,57 +73,61 @@ h1{
 	margin: 200px 0;
 	box-shadow: 1px 8px 20px -4px rgba(0,0,0,1);
 	padding: 30px;
+	display: flex;
+	justify-content: space-between;
 }
 
-#photo{
-	width: 45%;
-	height: 100%;
-	float:left;
+.photo {
+	width: 50%;
+	/* display: flex; */
+	/* justify-content: center ; */
 }
 
-#photo img{
-	width: 100%;
-	height: 100%;
-	border-radius: 1.5%;
+.photo img{
+	width: 200px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 5px solid rgb(242, 237, 237);
 }
 
 
-#bio-box{
+.bio-box{
 	width: 55%;
 	height: 100%;
 	float:right;
 }
 
 table tr td{
-  padding: 10px 20px 20px 20px;
-  margin:0;
-  font-family: 'Quicksand', sans-serif;
+	padding: 10px 20px 20px 20px;
+	margin:0;
+	font-family: 'Quicksand', sans-serif;
 
 }
 
-#biodata{
-  margin: 20px;
-  height: 100%;
-  width:100%;
-  border-left: 1px solid lightgrey;
+.biodata{
+	margin: 20px;
+	height: 100%;
+	width:100%;
+	border-left: 1px solid lightgrey;
 }
 
-#biodata h3{
-	  font-family: 'Quicksand', sans-serif;
-	  padding: 20px;
-      margin:0;
+.biodata h3{
+	font-family: 'Quicksand', sans-serif;
+	padding: 20px;
+	margin:0;
 }
 
 
-#biodata p{
-	  font-family: 'Quicksand', sans-serif;
-	  padding: 20px;
-      margin:0;
-      width: 450px;
-      text-align: justify;
+.biodata p{
+	font-family: 'Quicksand', sans-serif;
+	padding: 20px;
+	margin:0;
+	width: 450px;
+	text-align: justify;
 }
 
-#social-box{
+.social-box{
 	width: 70px;
 	height: 375px;
 	background-color: #D3D3D3;
@@ -129,34 +139,25 @@ table tr td{
 	
 }
 
-#social-box img{
+.social-box img{
 	width: 50px;
 	padding: 10px 0 10px 10px;
 	transition: all 0.5;
 }
 
-#social-box img:hover{
+.social-box img:hover{
 	width: 70px;
 	transition: all 0.2s;
 }
 
-footer{
-	background-color: #2F4F4F;
-	width: 100%;
-	margin:0;
-}
 
-footer h6{
-	color: whitesmoke;
-	font-family: 'Quicksand', sans-serif;
-	text-align: center;
-}
+/* ------------------------------------------------------END OF index.html STYLE---------------------------------------------------------*/
 
-/* ------------------------------------------------------END OF INDEX STYLE---------------------------------------------------------*/
+/* ------------------------------------------------------mygram.html STYLE----------------------------------------------------------*/
 
 
 
-#photo-grid img{
+.photo-grid img{
 	width: 30%;
 	height: 350px;
 	float:left;
@@ -166,14 +167,16 @@ footer h6{
 
 }
 
-#photo-grid img:hover{
+.photo-grid img:hover{
 	box-shadow: 0px 7px 43px 9px rgba(255,255,255,1);
 	transition: all 0.1s;
 }
 
-/* ------------------------------------------------------END OF MyGram STYLE---------------------------------------------------------*/
+/* ------------------------------------------------------END OF mygram.html STYLE---------------------------------------------------------*/
 
-#article-box{
+/* ------------------------------------------------------mypress.html STYLE---------------------------------------------------------------*/
+
+.article-box{
 	padding :20px;
 	width: 80%;
 	max-width: 700px;
@@ -208,4 +211,19 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-/* ------------------------------------------------------END OF MyPress STYLE---------------------------------------------------------*/
+/* ------------------------------------------------------END OF mypress.html STYLE---------------------------------------------------------*/
+
+/* ------------------------------------------------------footer STYLE----------------------------------------------------------------------*/
+
+
+footer{
+	background-color: #2F4F4F;
+	width: 100%;
+	margin:0;
+}
+
+footer h6{
+	color: whitesmoke;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
