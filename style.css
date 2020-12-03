@@ -3,24 +3,22 @@
 }
 
 body {
-	background-image: url(img/background.jpg);
+	background-color: white;
 	margin: 0;
 	padding:0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100vh;
 }
 
 /* ------------------------------------------------------HEADER STYLE--------------------------------------------------------------*/
 
 .header-box {
 	width: 100%;
-	background-color: #FFFAF0;
-	box-shadow: 0px 11px 21px -9px rgba(0,0,0,0.75);
-
 }
 
-h1 {
+.header-box h1 {
 	margin: 20px auto;
 	padding-bottom:20px;
 	font-family: 'Parisienne', cursive;
@@ -32,10 +30,11 @@ h1 {
 .header-box nav ul {
 	text-align: center;
 	margin:0;
+	padding: 0;
 }
 
 .header-box nav ul li {
-	padding: 20px 20px 20px 20px;
+	padding: 0.5em;
 	display: inline-block;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: bold;
@@ -46,158 +45,78 @@ h1 {
 	padding: 20px 50px 20px 50px;
 	text-decoration: none;
 	list-style-type: none;
-	color: #40E0D0;
+	color: #64dfdf;
+	border-radius: 0.2em;
 	transition: all 0.5s;
 }
 
 .header-box nav ul li a:hover {
-	background-color: #40E0D0;
+	background-color: #64dfdf;
 	color:#FFFAF0;
 	transition: all 0.5s;
 }
 
 /* ------------------------------------------------------END OF header STYLE----------------------------------------------------------------------*/
 
-.body-box {
-	width: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	margin: 50px auto;
-}
-
 .profile-box {
-	width: 75%;
-	height: 1000px;
-	background-color: whitesmoke;
-	box-shadow: 1px 8px 20px -4px rgba(0,0,0,1);
-	padding: 30px;
+	width: 85%;
+	padding: 0;
 	display: flex;
 	justify-content: space-evenly;
 	font-family: 'Quicksand', sans-serif;
+	margin: auto 1em;
+}
+
+.profile-box h1 {
+	color: #2c3e50;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	margin: 0;
+}
+
+.profile-box h2 {
+	color: #2c3e50;
+	font-size: 1rem;
+	letter-spacing: 0.2rem;
+	opacity: 50%;
+	margin: 0;
+}
+
+.profile-box p {
+	line-height: 2rem;
 }
 
 .left-profile {
-	width: 30%;
+	width: 50%;
 	text-align: left;
+	display: flex;
+	align-items: center;
 }
 
 .photo-profile {
-	padding-bottom: 10px;
 	text-align: center;
-	border-bottom: 5px solid rgb(242, 237, 237);
 }
 
 .photo-profile img {
-	width: 75%;
-	border-radius: 200px 200px 200px 200px;
-	-moz-border-radius: 200px 200px 200px 200px;
-	-webkit-border-radius: 200px 200px 200px 200px;
-	border: 5px solid rgb(242, 237, 237);
+	width: 50%;
+	border-radius: 50%;
+	border: solid 0.2rem whitesmoke;
 }
 
 .right-profile {
-	text-align: left;
-	width: 70%;
-	padding-left: 30px;
-}
-
-h2 {
-	margin-top: 0;
-}
-
-.bio {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.bio th {
-	padding-bottom: 15px;
-}
-
-.bio td {
-	padding-bottom: 15px;
-}
-
-.about {
 	text-align: justify;
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.work-experience {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.certificate {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.project {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.education {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.organization-experience {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.skill {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.language {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-.interest {
-	padding-bottom: 10px;
-	border-bottom: 5px solid rgb(242, 237, 237);
-}
-
-
-
-.social-box {
-	width: 70px;
-	height: 330px;
-	background-color: #D3D3D3;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	opacity: 80%;
-	box-shadow: 0px 7px 22px -11px rgba(0,0,0,1);
-}
-
-.social-box a {
-	display: block;
-}
-.social-box img {
-	width: 60%;
-	margin: 10px auto;
-	transition: all 0.5;
-}
-
-.social-box img:hover {
-	width: 70px;
-	transition: all 0.2s;
+	width: 50%;
+	display: flex;
+	align-items: center;
 }
 
 
 /* ------------------------------------------------------END OF index.html STYLE---------------------------------------------------------*/
 
-/* ------------------------------------------------------mygram.html STYLE----------------------------------------------------------*/
+/* ------------------------------------------------------snapshot.html STYLE----------------------------------------------------------*/
 
 
-
+/* 
 .photo-grid img{
 	width: 30%;
 	height: 350px;
@@ -211,13 +130,13 @@ h2 {
 .photo-grid img:hover{
 	box-shadow: 0px 7px 43px 9px rgba(255,255,255,1);
 	transition: all 0.1s;
-}
+} */
 
-/* ------------------------------------------------------END OF mygram.html STYLE---------------------------------------------------------*/
+/* ------------------------------------------------------END OF snapshot.html STYLE---------------------------------------------------------*/
 
-/* ------------------------------------------------------mypress.html STYLE---------------------------------------------------------------*/
+/* ------------------------------------------------------article.html STYLE---------------------------------------------------------------*/
 
-.article-box{
+/* .article-box {
 	padding :20px;
 	width: 80%;
 	max-width: 700px;
@@ -228,43 +147,22 @@ h2 {
 
 }
 
-.date{
+.date {
 	color : #3498db;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 
 }
 
-.quote{
+.quote {
 	border-left: solid #D3D3D3 5px;
 	padding-left: 5px;
-}
-
-h2{
-	color: #2c3e50;
-	font-size: 2.0rem;
-
 }
 
 hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
+} */
 
-/* ------------------------------------------------------END OF mypress.html STYLE---------------------------------------------------------*/
-
-/* ------------------------------------------------------footer STYLE----------------------------------------------------------------------*/
-
-
-footer{
-	background-color: #2F4F4F;
-	width: 100%;
-	margin: 0;
-}
-
-footer h6{
-	color: whitesmoke;
-	font-family: 'Quicksand', sans-serif;
-	text-align: center;
-}
+/* ------------------------------------------------------END OF article.html STYLE---------------------------------------------------------*/
