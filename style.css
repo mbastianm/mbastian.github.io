@@ -1,11 +1,11 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding:0;
 }
 
 body {
 	background-color: white;
-	margin: 0;
-	padding:0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,38 +16,36 @@ body {
 
 .header-box {
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .header-box h1 {
-	margin: 20px auto;
-	padding-bottom:20px;
 	font-family: 'Parisienne', cursive;
-	font-size: 80px;
-	text-align: center;
 	color: #2F4F4F;
+	font-size: 3.5em;
 }
 
 .header-box nav ul {
-	text-align: center;
 	margin:0;
 	padding: 0;
 }
 
 .header-box nav ul li {
-	padding: 0.5em;
 	display: inline-block;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 .header-box nav ul li a {
-	padding: 20px 50px 20px 50px;
 	text-decoration: none;
 	list-style-type: none;
 	color: #64dfdf;
 	border-radius: 0.2em;
 	transition: all 0.5s;
+	padding: 1em;
 }
 
 .header-box nav ul li a:hover {
@@ -62,7 +60,8 @@ body {
 	width: 85%;
 	padding: 0;
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
 	font-family: 'Quicksand', sans-serif;
 	margin: auto 1em;
 }
@@ -72,6 +71,7 @@ body {
 	font-size: 2rem;
 	letter-spacing: 0.2rem;
 	margin: 0;
+	text-align: center;
 }
 
 .profile-box h2 {
@@ -80,17 +80,21 @@ body {
 	letter-spacing: 0.2rem;
 	opacity: 0.5;
 	margin: 0;
+	text-align: center;
 }
 
 .profile-box p {
+	margin-top: 1em;
 	line-height: 2rem;
+	border-top: 0.2em solid #64dfdf27;
+	text-align: justify;
+	letter-spacing: 0.1em;
 }
 
 .left-profile {
 	width: 50%;
-	text-align: left;
 	display: flex;
-	align-items: center;
+	justify-content: center;
 }
 
 .photo-profile {
@@ -104,10 +108,9 @@ body {
 }
 
 .right-profile {
-	text-align: justify;
 	width: 50%;
 	display: flex;
-	align-items: center;
+	justify-content: center;
 }
 
 
