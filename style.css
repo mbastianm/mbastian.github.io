@@ -9,7 +9,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
 }
 
 /* ------------------------------------------------------HEADER STYLE--------------------------------------------------------------*/
@@ -34,7 +34,6 @@ body {
 
 .header-box nav ul li {
 	display: inline-block;
-	font-family: 'Quicksand', sans-serif;
 	font-weight: bold;
 	font-size: 1em;
 }
@@ -57,12 +56,12 @@ body {
 /* ------------------------------------------------------END OF header STYLE----------------------------------------------------------------------*/
 
 .profile-box {
-	width: 85%;
+	height: 80vh;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	font-family: 'Quicksand', sans-serif;
 	margin: auto 1em;
 }
 
@@ -113,7 +112,19 @@ body {
 	justify-content: center;
 }
 
+.button {
+	height: 20vh;
+}
+.find-me {
+	color: white;
+	text-decoration: none;
+	background-color: #219ebc;
+	padding: 0.8em;
+	text-transform: uppercase;
+	border-radius: 0.2em;
+	cursor: pointer;
 
+}
 /* ------------------------------------------------------END OF index.html STYLE---------------------------------------------------------*/
 
 /* ------------------------------------------------------snapshot.html STYLE----------------------------------------------------------*/
