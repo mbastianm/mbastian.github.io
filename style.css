@@ -151,6 +151,11 @@ body {
 	grid-template-columns: auto auto;
 }
 
+.grid-container a {
+	text-decoration: none;
+	color:#2c3e50;
+}
+
 .link {
 	width: 35vw;
 	height: 20vh;
@@ -170,29 +175,35 @@ body {
 	opacity: 0.3;
 }
 
+.link:hover{
+	background-color: white;
+	box-shadow: turquoise;
+	overflow: visible;
+}
+
 .github {
-	margin: 10px;
+	margin: 15px;
 	background-color: whitesmoke;
 	font-size: 2em;
 	font-weight: bold;
 }
 
 .twitter {
-	margin: 10px;
+	margin: 15px;
 	background-color: whitesmoke;
 	font-size: 2em;
 	font-weight: bold;
 }
 
 .linkedin {
-	margin: 10px;
+	margin: 15px;
 	background-color: whitesmoke;
 	font-size: 2em;
 	font-weight: bold;
 }
 
 .instagram {
-	margin: 10px;
+	margin: 15px;
 	background-color: whitesmoke;
 	font-size: 2em;
 	font-weight: bold;
