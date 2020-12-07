@@ -154,7 +154,22 @@ body {
 	color:#2c3e50;
 }
 
-.link {
+/* .link {
+	width: 35vw;
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+	background-color: whitesmoke;
+	font-size: 2em;
+	font-weight: bold;
+	transition: all 0.5s;
+} */
+
+#social div a {
 	width: 35vw;
 	height: 25vh;
 	display: flex;
@@ -168,9 +183,9 @@ body {
 	font-weight: bold;
 	transition: all 0.5s;
 }
-
-.link:hover{
+#social div a:hover{
 	background-color: white;
+	transform: scale(1.05)
 }
 
 .img-position {
